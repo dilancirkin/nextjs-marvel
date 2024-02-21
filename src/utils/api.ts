@@ -1,4 +1,4 @@
-import { CharacterWrapper } from "../models/types";
+import { CharacterWrapper , ComicWrapper} from "../models/types";
 import md5 from 'md5';
 
 const URL = 'https://gateway.marvel.com/v1/public';
@@ -20,8 +20,8 @@ const handleResponse = async <T>(response: Response) => {
   return data.data as T;
 }
 
-export const getCharacters = async (): Promise<CharacterWrapper> => {
-  const url = `${URL}/characters?${query}`;
+export const getCharacters = async (offset: number): Promise<CharacterWrapper> => {
+  const url = `${URL}/characters?limit=30&offset=${offset}&${query}`;
   const response = await fetch(url);
   return handleResponse<CharacterWrapper>(response);
 }
@@ -29,5 +29,11 @@ export const detailCharacter = async (characterId: string): Promise<CharacterWra
     const url = `${URL}/characters/${characterId}?${query}`;
     const response = await fetch(url);
     return handleResponse<CharacterWrapper>(response);
-  }
+}
+
+export const getCharacterComics = async (characterId: string): Promise<ComicWrapper> => {
+  const url = `${URL}/characters/${characterId}/comics?orderBy=-onsaleDate&limit=10&${query}`;
+  const response = await fetch(url);
+  return handleResponse<ComicWrapper>(response);
+}
   
