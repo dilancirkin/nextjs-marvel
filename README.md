@@ -1,8 +1,23 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Marvel
+
+
+A NextJS Application using Marvel API to display data about characters. Live demo available at:
+
+## Description
+Marvel characters are listed on the first page. You can enter the detail page of the characters and get more information about them.
+
 
 ## Getting Started
+1.To get this project files locally on your machine, you can clone this repository by running the following command on your terminal or command line:
+```bash
+git clone https://github.com/dilancirkin/nextjs-marvel
+```
+2.Next,get required API Keys and credentials from the following service providers
+[Marvel API Gateway](https://developer.marvel.com/)
 
-First, run the development server:
+3.Install all the dependency packages found in the package.json file by running yarn install or npm install from the project root directory.
+
+4.To start the development server of the application:
 
 ```bash
 npm run dev
@@ -20,17 +35,22 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Technologies
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+[React JS](https://react.dev/)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+[NextJS](https://nextjs.org/)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[Tailwind CSS](https://tailwindcss.com/)
+
+[TypeScript](https://www.typescriptlang.org/)
+
+[JEST](https://jestjs.io/)
+
+[React Icons](https://react-icons.github.io/react-icons/)
+
+[MD5](https://www.npmjs.com/package/md5)
+
