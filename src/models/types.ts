@@ -25,9 +25,12 @@ export interface Character {
   }
 
   export interface CharacterWrapper {
+    offset: number
+    limit: number
     results: Character[];
   }
 
   export interface ComicWrapper {
     results: Comic[];
   }
+

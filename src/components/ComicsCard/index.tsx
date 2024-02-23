@@ -1,24 +1,20 @@
 import { Comic } from "@/src/models/types";
-import Image from "next/image";
 
 interface ComicCardProps {
-  character: Comic;
+  comic: Comic;
 }
 
 const ComicsCard: React.FC<ComicCardProps> = ({ comic }) => {
   return (
-    <div className="card w-full bg-base-200 shadow-xl">
-      <Image
-        src={`${comic.thumbnail.path}.${comic.thumbnail.extension}`}
-        alt={comic.title}
-        width={200}
-        height={200}
-      />
-      <div className="card-body">
-        <h2 className="card-title">{comic.title}</h2>
-        
-      </div>
-    </div>
+<div className="w-80 h-full text-center max-w-xl bg-dark dark:bg-gray-800 border border-gray-200 rounded shadow dark:border-gray-700">
+  <img
+    className="p-2 rounded-t-lg w-full h-auto"
+    src={`${comic.thumbnail.path}.${comic.thumbnail.extension}`}
+    alt={comic.title}
+  />
+</div>
+
+
   );
 };
 

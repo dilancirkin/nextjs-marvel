@@ -20,11 +20,12 @@ const handleResponse = async <T>(response: Response) => {
   return data.data as T;
 }
 
-export const getCharacters = async (offset: number): Promise<CharacterWrapper> => {
-  const url = `${URL}/characters?limit=30&offset=${offset}&${query}`;
+export const getCharacters = async (offset: number,limit:number): Promise<CharacterWrapper> => {
+  const url = `${URL}/characters?limit=${limit}&offset=${offset}&${query}`;
   const response = await fetch(url);
   return handleResponse<CharacterWrapper>(response);
 }
+
 export const detailCharacter = async (characterId: string): Promise<CharacterWrapper> => {
     const url = `${URL}/characters/${characterId}?${query}`;
     const response = await fetch(url);
