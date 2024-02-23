@@ -2,8 +2,8 @@
 import { detailCharacter, getCharacterComics } from "@/src/utils/api";
 import ComicsCard from "@/src/components/ComicsCard";
 import { MdArrowBack } from "react-icons/md";
-import 'slick-carousel/slick/slick.css'
-import 'slick-carousel/slick/slick-theme.css'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
 interface CharacterDetailProps {
@@ -45,12 +45,12 @@ const CharacterDetail: React.FC<CharacterDetailProps> = async ({ params }) => {
         <p className="text-sm font-light mb-10">{description}</p>
       </div>
       <div className="slider-container">
-      <Slider {...settings}>
-        {comics.results.map((comic) => (
-          <ComicsCard key={comic.id} comic={comic} />
-        ))}
-     </Slider>
-     </div>
+        <Slider {...settings}>
+          {comics.results.map((comic) => (
+            <ComicsCard key={comic.id} comic={comic} />
+          ))}
+        </Slider>
+      </div>
     </div>
   );
 };

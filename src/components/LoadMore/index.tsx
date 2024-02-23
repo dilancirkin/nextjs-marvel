@@ -7,7 +7,6 @@ import { Character } from "@/src/models/types";
 import CharacterCard from "@/src/components/CharacterCard";
 
 export function LoadMore() {
-
   const [characters, setCharacters] = useState<Character[]>([]);
   const [offset, setOffset] = useState(30);
   const [limit] = useState(30);
@@ -28,8 +27,6 @@ export function LoadMore() {
       loadMoreCharacters();
     }
   }, [inView]);
- 
-
 
   return (
     <>

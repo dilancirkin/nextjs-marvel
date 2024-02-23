@@ -6,15 +6,13 @@ interface ComicCardProps {
 
 const ComicsCard: React.FC<ComicCardProps> = ({ comic }) => {
   return (
-<div >
-  <img
-    className="p-2 rounded-t-lg w-full h-80"
-    src={`${comic.thumbnail.path}.${comic.thumbnail.extension}`}
-    alt={comic.title}
-  />
-</div>
-
-
+    <div>
+      <img
+        className="p-2 rounded-t-lg w-full h-80"
+        src={`${comic.thumbnail.path}.${comic.thumbnail.extension}`}
+        alt={comic.title}
+      />
+    </div>
   );
 };
 
