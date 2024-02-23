@@ -6,9 +6,9 @@ interface ComicCardProps {
 
 const ComicsCard: React.FC<ComicCardProps> = ({ comic }) => {
   return (
-<div className="w-40 h-full text-center max-w-xl bg-dark dark:bg-gray-800 border border-gray-200 rounded shadow dark:border-gray-700">
+<div >
   <img
-    className="p-2 rounded-t-lg w-full h-auto"
+    className="p-2 rounded-t-lg w-full h-80"
     src={`${comic.thumbnail.path}.${comic.thumbnail.extension}`}
     alt={comic.title}
   />

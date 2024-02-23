@@ -2,7 +2,8 @@
 import { detailCharacter, getCharacterComics } from "@/src/utils/api";
 import ComicsCard from "@/src/components/ComicsCard";
 import { MdArrowBack } from "react-icons/md";
-
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
 import Slider from "react-slick";
 
 interface CharacterDetailProps {
@@ -23,11 +24,11 @@ const CharacterDetail: React.FC<CharacterDetailProps> = async ({ params }) => {
     infinite: true,
     speed: 500,
     slidesToShow: 5,
-    slidesToScroll: 5,
+    slidesToScroll: 2,
   };
 
   return (
-    <div className="p-10 relative">
+    <div className="p-20 ">
       <a href="/" className="absolute left-20 top-20">
         <MdArrowBack className="big-orange-arrow opacity-50 cursor-pointer hover:opacity-100" />
       </a>
