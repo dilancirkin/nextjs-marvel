@@ -7,6 +7,13 @@ A NextJS Application using Marvel API to display data about characters. Live dem
 ## Description
 Marvel characters are listed on the first page. You can enter the detail page of the characters and get more information about them.
 
+## Images
+
+![Characters Home](images/home1.png)
+
+![Characters Home](images/home2.png)
+
+![Characters Detail](images/characters.png)
 
 ## Getting Started
 1.To get this project files locally on your machine, you can clone this repository by running the following command on your terminal or command line:
