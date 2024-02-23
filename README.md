@@ -1,7 +1,7 @@
 # Marvel
 
 
-A NextJS Application using Marvel API to display data about characters. Live demo available at:  [Marvel App](marvel-5s8dg478y-dilancirkin.vercel.app)
+A NextJS Application using Marvel API to display data about characters. Live demo available at: [Marvel App](https://marvel-5s8dg478y-dilancirkin.vercel.app/)
 
 
 ## Description
